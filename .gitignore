@@ -2,3 +2,4 @@ sample.lap
 laptop_corpus_1019917.txt
 restaurant_corpus_1000000.txt
 .vscode
+*.tok
