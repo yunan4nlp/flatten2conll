@@ -6,7 +6,7 @@ def tokenize(inputFile, outputFile, max_word, max_char):
     with open(outputFile, mode='w', encoding='utf8') as out_f:
         input_f = open(inputFile, mode='r', encoding='utf8')
         for text in input_f.readlines():
-            text = text.strip(
+            text = text.strip()
             text = re.sub(r'(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]', "url", text)
             text = text.strip("\n\r    \xa0")
             text = re.sub(r'\x10', "", text)
